@@ -2,7 +2,7 @@
 For generating synchronised videos / ordered frames of multiple cameras. Used for triangulation over time. 
 This repository uses functionalities of [peak-cv-bridge](https://github.com/JMUWRobotics/peak-cv-bridge) and is dependet on this infrastructure (Hardware Trigger).
 ## Setting
-![Company Logo](/peakCVSyncVid/visualizations/infrastructure.png "Our Company Logo")
+![Company Logo](visualizations/infrastructure.png "Our Company Logo")
 ## Problem
 The hardware trigger only gurantees that all cameras start the exposure at the same. peakCVBridge does not provide saving and sending of the synced images to a connected client. `peakcvbridge-capture` has the argument `-t`to enable the trigger on line0.  It is possible to watch the image of the connected camera, by connecting with `ssh -X -i ~/.ssh/camera-nun-stud.key stud@192.168.0.[12,13,14,15,16,17]` and running:
 ```console
@@ -71,4 +71,5 @@ Afterwards you have fetched, you have a folder `recording/test` with folders `nu
 ```console
 python3 sync_frames.py recordings/test
 ```
+# peakCVSyncVid
 # peakCVSyncVid

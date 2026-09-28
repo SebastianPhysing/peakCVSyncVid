@@ -28,7 +28,7 @@ You only need to run:
 ```
 `setup_nucs.sh` for python venv generation, `record.py` will be copied to all nucs.  
 Additionaly you need to activate the hardware trigger on the CamServer (which is connected to the arduino).  
-`Hint`: We could not find the script. Therfore we copied the `set-frequency.sh` to the CamServer and set the baudrate to *115200* (also in the shell script it has to be changed). To do so: NEUE FIRMWARE, nicht mit peakCVBridge 
+`Hint`: We could not find the script. Therfore we copied the `set-frequency.sh` to the CamServer and set the baudrate to *115200* (also in the shell script it has to be changed). 
 ```console
 ssh -p 700 cam@192.168.0.1
 # copy code from peakcvbridge and change baudrate
@@ -71,5 +71,4 @@ Afterwards you have fetched, you have a folder `recording/test` with folders `nu
 ```console
 python3 sync_frames.py recordings/test
 ```
-# peakCVSyncVid
-# peakCVSyncVid
+

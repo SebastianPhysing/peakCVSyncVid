@@ -14,7 +14,7 @@ Additonally the images are not stored and can be exported.
 ## Functionality
 PeakCVSyncVid uses `peakcvbridge` to access the IDS cameras easier (access with OpenCV) and the hardware trigger to capture in sync. The images are stored on each Nuc in format `frames/000000.png`. Same number = same trigge pulse = same time. Additonally a csv file (`frames.csv) is created to store the id of each frame, the host time and the path to the img. 
 
-![Company Logo](/peakCVSyncVid/visualizations/peakCVSyncVid.png "Our Company Logo")
+![Company Logo](visualizations/peakCVSyncVid.png "Our Company Logo")
 
 ## Setup
 In order not to have to run every single command on each Nuc independelty, you can find `nucs.sh`. The following dependencies are tried to install on the Nucs via `setup_nuc.sh`
